@@ -13,6 +13,11 @@ spring:
       min-idle: 1
       test-on-borrow: true
       test-on-return: true
+    ribbitmq:
+      host: 123.56.249.187
+      port: 5672
+      username: guest
+      password: guest
       
 redis:
   maxTotal: 8
@@ -29,8 +34,4 @@ redis:
   timeout: 1000
   
   
-ribbitmq:
-  host: 123.56.249.187
-  port: 5672
-  username: guest
-  password: guest
+
