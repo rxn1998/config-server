@@ -17,8 +17,8 @@ spring:
   ribbitmq:
     host: 123.56.249.187
     port: 5672
-    username: guest
-    password: guest
+    username: root
+    password: 123456
       
       
 mybatis:
