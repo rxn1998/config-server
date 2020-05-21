@@ -16,7 +16,7 @@ spring:
       test-on-return: true
   ribbitmq:
     host: 123.56.249.187
-    port: 5672
+    port: 15672
     username: root
     password: 123456
       
