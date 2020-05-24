@@ -21,9 +21,9 @@ spring:
     password: 123456
   redis:
     database: 0
-    host: 47.94.155.74
+    host: 123.56.25.229
     port: 6379
-    password: Qinfo20180507
+    password: 123456
     jedis:
       pool:
         max-active: 1
