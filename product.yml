@@ -36,4 +36,5 @@ redis:
   redisHost: 123.56.25.229
   redisPort: 6379
   redisPassword: 123456
-  timeout: 1000 
+  timeout: 1000  
+
