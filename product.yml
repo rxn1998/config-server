@@ -18,13 +18,8 @@ spring:
     host: 123.56.25.229
     port: 5672
     username: root
-    password: 123456    
-      
-mybatis:
-  mapper-locations: classpath*:com/neuedu/mapper/*Mapper.xml
-  config-location: classpath:mybatis-config.xml  
-  
-redis:
+    password: 123456
+  redis:
   database: 0
     host: 123.56.25.229
     port: 6379
@@ -36,4 +31,10 @@ redis:
         max-idle: 10
         min-idle: 2
     timeout: 1000 
+      
+mybatis:
+  mapper-locations: classpath*:com/neuedu/mapper/*Mapper.xml
+  config-location: classpath:mybatis-config.xml  
+  
+
 
