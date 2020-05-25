@@ -1,11 +1,12 @@
 server:
   port: 9003
+  
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/shopping? characterEncoding=utf8&serverTimezone=Asia/Shanghai
+      url: jdbc:mysql://localhost:3306/shopping?characterEncoding=utf8&serverTimezone=Asia/Shanghai
       username: root
       password: 123456
       max-active: 20
@@ -13,14 +14,16 @@ spring:
       min-idle: 1
       test-on-borrow: true
       test-on-return: true
-    ribbitmq:
-      host: 123.56.249.187
-      port: 5672
-      username: root
-      password: 123456
+  rabbitmq:
+    host: 123.56.25.229
+    port: 5672
+    username: root
+    password: 123456    
+      
 mybatis:
   mapper-locations: classpath*:com/neuedu/mapper/*Mapper.xml
-  config-location: classpath:mybatis-config.xml
+  config-location: classpath:mybatis-config.xml  
+  
 redis:
   maxTotal: 8
   maxIdle: 8
@@ -30,7 +33,10 @@ redis:
   testOnBorrow: true
   testOnReturn: true
   jmxEnabled: true
-  redisHost: 123.56.249.187
+  redisHost: 123.56.25.229
   redisPort: 6379
   redisPassword: 123456
-  timeout: 1000
+  timeout: 1000  
+  
+resetpassword:
+  timeout: 60
